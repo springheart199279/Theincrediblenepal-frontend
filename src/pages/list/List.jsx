@@ -15,7 +15,6 @@ const List = () => {
   const [options] = useState(location.state.options);
   const [openDate, setOpenDate] = useState(false);
 
-  console.log(location)
   return (
     <div>
       <Navbar />
@@ -26,7 +25,7 @@ const List = () => {
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
               <label>Destination</label>
-              <input type="text" placeholder={destination} onChange={(e) => setDestination(e.target.value)}/>
+              <input type="text" placeholder={destination} onChange={(e) => setDestination(e.target.value)} />
             </div>
             <div className="lsItem">
               <label>Check-in Date</label>
